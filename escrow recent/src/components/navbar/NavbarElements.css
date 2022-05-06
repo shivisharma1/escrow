@@ -1,0 +1,213 @@
+.Nav{
+    background: #000000;
+    height:80px;
+    /* margin-top:-80px; */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    @media screen and (max-width: 960px){
+        transition: 0.8s all ease;
+    }
+}
+
+.NavbarContainer{
+    display:flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+
+.NavLogo{
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.MobileIcon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    /* transform: translate(-100%, 60%); */
+    font-size: 1.8rem;
+    cursor: pointer;
+
+}
+
+.NavMenu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+        .MobileIcon {
+            display: none;
+        }
+
+        .NavMenu{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-align: center;
+            margin-right: -22px;
+        }
+}
+
+.NavItem{
+    height: 80px;
+}
+
+.NavLinks{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+    
+.NavLinks.active{
+        border-bottom: 3px solid #01bf71;
+    }
+
+
+.NavBtn{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    
+    @media screen and (max-width: 768px){
+        display:none
+    }
+}
+
+.NavBtnLink{
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.NavBtnLink:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
+
+
+
+
+
+    .topbar {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+      }
+      
+      .topbarWrapper {
+        height: 100%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+       
+      }
+      
+      /* .logo {
+        font-weight: bold;
+        font-size: 30px;
+        color: darkblue;
+        cursor: pointer;
+        
+        
+      } */
+      
+      .topRight{
+          margin-left: 2pc;
+      }
+      
+      
+      
+      .topbarIconContainer {
+      
+        cursor: pointer;
+        margin-right: 0px;
+        color: #555;
+      }
+      
+      .topIconBadge{
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: -5px;
+          right: 0px;
+          background-color: red;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+      }
+      
+      .topAvatar{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+      }
+      
+      .NavBtn{
+        display: block;
+        align-items: center;
+        margin-left: 30px;
+        
+        @media screen and (max-width: 768px){
+            display:none
+        }
+      }
+      
+      .NavBtnLink{
+        border-radius: 50px;
+        background: rgb(46, 46, 123);
+        white-space: nowrap;
+        padding: 10px 22px;
+        color: white;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+      }
+      
+      .NavBtnLink:hover{
+            transition: all 0.2s ease-in-out;
+            background: #fff;
+            color: #010606;
+        }
